@@ -1,0 +1,108 @@
+::selection {
+    background: #ffffff16;
+    color: snow;
+  }
+  ::placeholder {
+    color: #fffafa4f;
+    letter-spacing: 1px;
+  }
+  *,
+  *::after,
+  *::before {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #fffafa;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+    font-weight: 100;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    transition: all 0.12s ease-in-out;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #121416;
+  
+  }
+  
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-flow: column;
+    background: #ffffff16;
+    box-shadow: 0 8px 32px 0 #ffffff16;
+    backdrop-filter: blur(8px);
+    border-radius: 6px;
+    border: 1px solid #ffffff04;
+    padding: 0;
+    width: 80%;
+    max-width: 240px;
+    * {
+      transition: all 0.24s ease-in-out;
+    }
+    > .title {
+      letter-spacing: 8px;
+      font-size: 24px;
+      padding: 32px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    > .actions {
+      padding: 32px 0;
+    }
+    .buttons {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      > * {
+        margin: 0 !important;
+      }
+    }
+  }
+  input {
+    line-height: 56px;
+    padding: 0 24px;
+    background: #00000012;
+    letter-spacing: 1px;
+    &:hover {
+      background: #00000016;
+    }
+    &:focus {
+      background: #00000024;
+    }
+  }
+  button {
+    cursor: pointer;
+    background: #00000012;
+    line-height: 44px;
+    padding: 0 24px;
+    border-radius: 4px;
+    border: 1px solid #ffffff12;
+    margin: 32px auto;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: fit-content;
+   
+    
+   
+  }
+  
+
+  
+  
+  @keyframes Shine {
+    to {
+      background-position-x: -20%;
+    }
+  }
+  
